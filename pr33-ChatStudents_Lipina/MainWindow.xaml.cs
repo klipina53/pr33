@@ -1,4 +1,5 @@
-﻿using System;
+﻿using pr33_ChatStudents_Lipina.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,17 @@ namespace pr33_ChatStudents_Lipina
     /// </summary>
     public partial class MainWindow : Window
     {
+        public static MainWindow Instance;
+        public Users LoginUser = null;
+
         public MainWindow()
         {
             InitializeComponent();
+            Instance = this;
+            OpenPages(new Pages.Login());
         }
+
+        public void OpenPages(Page page) =>
+            frame.Navigate(page);
     }
 }
