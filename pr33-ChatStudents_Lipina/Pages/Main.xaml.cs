@@ -1,4 +1,7 @@
-﻿using System;
+﻿using pr33_ChatStudents_Lipina.Classes.Common;
+using pr33_ChatStudents_Lipina.Classes;
+using pr33_ChatStudents_Lipina.Models;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -21,6 +24,11 @@ namespace pr33_ChatStudents_Lipina.Pages
         public Main()
         {
             InitializeComponent();
+        }  
+        public void SelectUser(Users User)
+        {
+     
         }
     }
+  
 }

@@ -27,8 +27,4 @@
     <Resource Include="Images\logo.png" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Pages\Items\" />
-  </ItemGroup>
-
 </Project>
